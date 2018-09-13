@@ -2,7 +2,7 @@
     if (!$) {
         return undefined;
     }
-    let loaderUrl = '/preloader.svg';
+    let loaderUrl = 'preloader.svg';
     $.fn.extend({
         loader: function (enable) {
             if (enable) {
