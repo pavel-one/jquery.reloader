@@ -4,6 +4,6 @@
 
 # Применение  
 
-`$('.className').loader(true);` - включить прелоадер для `className`
+`$('.className').loader(true);` - включить прелоадер для `className`  
 `$('.className').loader(false);` - выключить пррелоадер  
 `$('.className').reloadObj();` - перезагрузить html содержимое блока `className`
