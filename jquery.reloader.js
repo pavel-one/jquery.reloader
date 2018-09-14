@@ -2,7 +2,7 @@
     if (!$) {
         return undefined;
     }
-    let loaderUrl = 'preloader.svg';
+    let loaderUrl = '/preloader.svg';
     $.fn.extend({
         loader: function (enable) {
             if (enable) {
@@ -18,8 +18,10 @@
             }
         },
         reloadObj: function () {
-            console.log(this);
-            let className = '.' + this[0].className;
+            let className = '';
+            this[0].classList.forEach((item) => {
+                className += '.' + item;
+            });
             $(className).loader(true);
             $.ajax({
                 url: window.location.href,
